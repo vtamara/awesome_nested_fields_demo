@@ -1,7 +1,7 @@
 Awesome Nested Fields Demo App
 ==============================
 
-This is Phonebook, a demo application for the [awesome_nested_fields](https://github.com/lailsonbm/awesome_nested_fields) gem. Feel free to download, run and learn from it.
+This is Phonebook, a demo application for Rails 4.1.0.beta1 with the [awesome_nested_fields](https://github.com/lailsonbm/awesome_nested_fields) gem.  Feel free to download, run and learn from it.
 
 Live Demo
 ---------

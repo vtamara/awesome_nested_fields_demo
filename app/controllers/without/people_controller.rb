@@ -42,7 +42,7 @@ class Without::PeopleController < ApplicationController
   # POST /people
   # POST /people.xml
   def create
-    @person = Person.new(params[:person])
+    @person = Person.new(person_params)
 
     respond_to do |format|
       if @person.save
@@ -61,7 +61,7 @@ class Without::PeopleController < ApplicationController
     @person = Person.find(params[:id])
     
     respond_to do |format|
-      if @person.update_attributes(params[:person])
+      if @person.update(person_params)
         format.html { redirect_to([:without, @person], :notice => 'Person was successfully updated.') }
         format.xml  { head :ok }
       else
